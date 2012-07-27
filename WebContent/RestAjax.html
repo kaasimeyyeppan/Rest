@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rest - Ajax</title>
+<script src="jquery-1.7.2.min.js"></script>
+<script>
+function getTemparature(){
+	$.getJSON("stpi/reporter/summary/"+$("#city").val(), function(data){
+		$("#result").append(data.temparature);
+	});
+}
+$().ready(function(){
+	$("#but").on("click", getTemparature);
+});
+</script>
+</head>
+<body>
+City : <input type="text" id="city">
+<br />
+Temparature : <h3 id="result"></h3>
+<input type="button" id="but" value="click">
+</body>
+</html>

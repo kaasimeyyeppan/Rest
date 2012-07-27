@@ -1,0 +1,24 @@
+Create a RESTful service that  will be used to maintain a list of courses along with their unique id. You should be able to add, remove, list, show courses.
+Implement in the RESTful style. For example.
+
+If you type the URL
+http://localhost:8080/<context>/course/add/Ruby
+
+Ruby course gets added to the list with a unique id and you get a message "Ruby successfully added"
+
+If you type the URL
+http://localhost:8080/<context>/course/show/1
+The output is "Ruby"
+
+If you type the URL
+http://localhost:8080/<context>/course/add/Grails
+
+Grails course gets added to the list with a unique id and you get a message "Grails successfully added"
+
+If you type the URL
+http://localhost:8080/<context>/course/list
+The output is
+1-->Ruby
+2-->Grails
+
+The output of all the methods will be in JSON format.
